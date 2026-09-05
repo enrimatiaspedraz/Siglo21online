@@ -20,7 +20,9 @@
                 <img src="image/logo.png" alt="Universidad Siglo 21">
             </div>
             <div class="header-contact hidden-mobile">
+                <a href="https://wa.me/1155555555?text=Hola%20quiero%20más%20información%20sobre%20las%20carreras" target="_blank" class="whatsapp-link">
                 <span class="phone"><i class="fa-brands fa-whatsapp"></i> 0810 555 0202</span>
+                </a>
                 <a href="#formulario" class="btn btn-primary">Quiero información</a>
             </div>
         </div>
@@ -32,7 +34,7 @@
             <div class="hero-banner">
                 <div class="hero-content">
                     <h1>Tu próximo paso empieza con una decisión</h1>
-                    <p>Elegí estudiar en Universidad Siglo 21 y formate para transformar tus oportunidades profesionales.</p>
+                    <p>Estudia en <b>Universidad Siglo 21</b> y formate para transformar tus oportunidades profesionales.</p>
                     <a href="#formulario" class="btn btn-primary btn-large">Quiero recibir información</a>
                 </div>
             </div>
@@ -48,7 +50,7 @@
                 <!-- Abogacía -->
                 <div class="card">
                     <div class="card-img">
-                        <img src="image/abogacia.jpg" alt="Abogacía">
+                        <img src="image/abogacia2.jpg" alt="Abogacía">
                         <div class="card-icon"><i class="fa-solid fa-scale-balanced"></i></div>
                     </div>
                     <div class="card-content">
@@ -62,7 +64,7 @@
                 <!-- Martillero -->
                 <div class="card">
                     <div class="card-img">
-                        <img src="image/martillero.jpg" alt="Martillero">
+                        <img src="image/martillero2.jpg" alt="Martillero">
                         <div class="card-icon"><i class="fa-solid fa-house"></i></div>
                     </div>
                     <div class="card-content">
@@ -89,7 +91,7 @@
             </div>
             
             <div class="text-center mt-4">
-                <a href="#" class="btn btn-outline">Ver todas las carreras</a>
+                <a href="#" class="btn btn-outline">Consultar por otras carreras</a>
             </div>
         </div>
     </section>
@@ -158,7 +160,7 @@
     </section>
 
     <!-- MODALIDADES SECTION -->
-    <section class="modalidades">
+    <!-- <section class="modalidades">
         <div class="container text-center">
             <p class="subtitle">TU CARRERA. TU FORMA DE ESTUDIAR.</p>
             <p class="mod-desc">Elegí la modalidad que mejor se adapta a tu vida.</p>
@@ -181,7 +183,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- FORM SECTION -->
     <section id="formulario" class="contacto-section">
@@ -203,13 +205,40 @@
                         <input type="email" placeholder="Email" required>
                     </div>
                     <div class="form-row">
-                        <input type="tel" placeholder="Teléfono" required>
+                        <input type="tel" placeholder="Celular (sin 0 y sin 15)" required>
                         <select required>
                             <option value="" disabled selected>Provincia</option>
-                            <option value="BA">Buenos Aires</option>
-                            <option value="CBA">Córdoba</option>
+                            <option value="Buenos Aires">Buenos Aires</option>
+                            <option value="CABA">Ciudad Autónoma de Buenos Aires</option>
+                            <option value="Catamarca">Catamarca</option>
+                            <option value="Chaco">Chaco</option>
+                            <option value="Chubut">Chubut</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Corrientes">Corrientes</option>
+                            <option value="Entre Ríos">Entre Ríos</option>
+                            <option value="Formosa">Formosa</option>
+                            <option value="Jujuy">Jujuy</option>
+                            <option value="La Pampa">La Pampa</option>
+                            <option value="La Rioja">La Rioja</option>
+                            <option value="Mendoza">Mendoza</option>
+                            <option value="Misiones">Misiones</option>
+                            <option value="Neuquén">Neuquén</option>
+                            <option value="Río Negro">Río Negro</option>
+                            <option value="Salta">Salta</option>
+                            <option value="San Juan">San Juan</option>
+                            <option value="San Luis">San Luis</option>
+                            <option value="Santa Cruz">Santa Cruz</option>
+                            <option value="Santa Fe">Santa Fe</option>
+                            <option value="Santiago del Estero">Santiago del Estero</option>
+                            <option value="Tierra del Fuego">Tierra del Fuego</option>
+                            <option value="Tucumán">Tucumán</option>
                         </select>
                     </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Localidad" required>
+                        <input type="text" placeholder="Carrera" required>
+                    </div>
+                    <div class="form-row">
                     <button type="submit" class="btn btn-primary btn-block">Quiero que me contacten</button>
                 </form>
             </div>
@@ -235,6 +264,34 @@
                 <p>Transformá <span class="highlight">tu historia</span></p>
             </div>
         </div>
+        <!-- ICONO WHATSAPP FLOTANTE -->
+         <a href="https://wa.me/1155555555?text=Hola%20quiero%20más%20información%20sobre%20las%20carreras" class="whatsapp-flotante" target="_blank" rel="noopener">
+  <img src="./image/iconowhatsapp.jpg" alt="WhatsApp" />
+</a>
+
+<style>
+.whatsapp-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 9999;
+}
+.whatsapp-flotante img {
+  width: 35px;
+  height: 35px;
+}
+</style>
+
+<!-- FIN ICONO WHATSAPP FLOTANTE -->
+
     </footer>
 
 </body>
