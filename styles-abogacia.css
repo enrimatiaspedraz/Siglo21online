@@ -743,3 +743,20 @@ h1, h2, h3, h4 { color: var(--color-primary); font-weight: 700; }
     }
 
 }
+
+.hero-banner {
+    /* Aquí se genera el degradado lineal (blanco a transparente) y se superpone a la imagen */
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 0) 50%), url('image/abogacia.jpg');
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px; /* Bordes redondeados */
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+.hero-content {
+    width: 55%;
+    padding: 60px;
+}
