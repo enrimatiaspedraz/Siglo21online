@@ -172,3 +172,54 @@ h1, h2, h3, h4 { color: var(--color-primary); font-weight: 700; }
 @media (max-width: 576px) {
     .features-grid { grid-template-columns: 1fr; }
 }
+
+<!-- MARQUESINA -->
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f8f9fa; /* Fondo gris muy claro */
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 16px 0;
+    display: flex;
+}
+
+.marquee-track {
+    display: flex;
+    width: fit-content;
+    /* 20s es la velocidad. Reducí el número para que vaya más rápido */
+    animation: scroll-marquee 20s linear infinite; 
+}
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.marquee-content span {
+    font-family: 'Inter', 'Segoe UI', Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2.5px; /* Espaciado elegante */
+    color: #666666; /* Gris oscuro para el texto */
+    text-transform: uppercase;
+}
+
+.marquee-content .separator {
+    margin: 0 40px; /* Separación entre cada frase */
+    color: #cccccc; /* Gris claro para el punto separador */
+    font-size: 40px;
+}
+
+/* La animación mueve el track exactamente a la mitad (el tamaño de un bloque) 
+   para reiniciar el ciclo de forma invisible */
+@keyframes scroll-marquee {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

@@ -111,7 +111,7 @@ h1, h2, h3, h4 { color: var(--color-primary); font-weight: 700; }
 }
 
 .section-heading {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto 50px;
 }
 
@@ -127,7 +127,8 @@ h1, h2, h3, h4 { color: var(--color-primary); font-weight: 700; }
 
 .section-heading p {
     color: black;
-    font-size: 1rem;
+    font-weight: bold;
+    font-size: 16px;
     line-height: 2.5;
 }
 
@@ -280,10 +281,15 @@ h1, h2, h3, h4 { color: var(--color-primary); font-weight: 700; }
 
 .experiencia-box {
     background: var(--color-primary);
-    color: #fff;
-    padding: 45px 35px;
+    padding: 10px 10px;
     border-radius: 10px;
     text-align: center;
+}
+
+.experiencia-box img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Elimina un pequeño margen inferior que suelen dejar las imágenes */
 }
 
 .experiencia-icon {
@@ -292,118 +298,12 @@ h1, h2, h3, h4 { color: var(--color-primary); font-weight: 700; }
     color: #8cc63f;
 }
 
-.experiencia-box h3 {
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.experiencia-box p {
-    font-size: 14px;
-    line-height: 1.7;
-    margin-bottom: 30px;
-}
-
-.experiencia-box .btn {
-    background: #fff;
-    color: var(--color-primary);
-}
-
-.experiencia-box .btn:hover {
-    background: #f1f1f1;
-}
-
-
-/* =========================================================
-   MODALIDADES
-   ========================================================= */
-
-.modalidades-section {
-    padding: 90px 0;
-    background: var(--color-light);
-}
-
-.modalidades-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.modalidad-card {
-    position: relative;
-    background: #fff;
-    border: 1px solid var(--color-border);
-    border-radius: 8px;
-    padding: 35px 30px;
-    transition: all 0.3s ease;
-}
-
-.modalidad-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-}
-
-.modalidad-destacada {
-    border: 2px solid var(--color-primary);
-}
-
-.modalidad-icon {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    background: #eef5f2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-primary);
-    font-size: 23px;
-    margin-bottom: 20px;
-}
-
-.modalidad-tag {
-    display: inline-block;
-    color: var(--color-primary);
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 1.5px;
-    margin-bottom: 8px;
-}
-
-.modalidad-card h3 {
-    font-size: 23px;
-    margin-bottom: 12px;
-}
-
-.modalidad-card p {
-    color: var(--color-gray);
-    font-size: 14px;
-    line-height: 1.7;
-    margin-bottom: 20px;
-}
-
-.modalidad-card ul {
-    list-style: none;
-}
-
-.modalidad-card li {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
-    font-size: 13px;
-}
-
-.modalidad-card li i {
-    color: #8cc63f;
-    margin-top: 4px;
-}
-
-
 /* =========================================================
    PLAN DE ESTUDIOS
    ========================================================= */
 
 .plan-section {
-    padding: 90px 0;
+    padding: 20px 0;
     background: #fff;
 }
 
@@ -500,71 +400,9 @@ h1, h2, h3, h4 { color: var(--color-primary); font-weight: 700; }
     top: 8px;
 }
 
-.anio-final {
-    border: 2px solid var(--color-primary);
-}
 
 .cuatrimestre-full {
     width: 100%;
-}
-
-
-/* =========================================================
-   SALIDA PROFESIONAL
-   ========================================================= */
-
-.salida-section {
-    background: var(--color-primary);
-    padding: 80px 0;
-    color: #fff;
-}
-
-.salida-container {
-    display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: 70px;
-    align-items: center;
-}
-
-.salida-text .subtitle {
-    color: #8cc63f;
-}
-
-.salida-text h2 {
-    color: #fff;
-    font-size: 2.4rem;
-    margin-bottom: 20px;
-}
-
-.salida-text p {
-    color: rgba(255,255,255,0.85);
-    line-height: 1.8;
-}
-
-.salida-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-}
-
-.salida-grid div {
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.12);
-    padding: 25px;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.salida-grid i {
-    color: #8cc63f;
-    font-size: 22px;
-}
-
-.salida-grid strong {
-    font-size: 13px;
-    color: #fff;
 }
 
 
@@ -758,6 +596,6 @@ h1, h2, h3, h4 { color: var(--color-primary); font-weight: 700; }
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 .hero-content {
-    width: 55%;
+    width: 40%;
     padding: 40px;
 }
