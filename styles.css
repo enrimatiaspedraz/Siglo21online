@@ -189,7 +189,7 @@ h1, h2, h3, h4 { color: var(--color-primary); font-weight: 700; }
     display: flex;
     width: fit-content;
     /* 20s es la velocidad. Reducí el número para que vaya más rápido */
-    animation: scroll-marquee 20s linear infinite; 
+    animation: scroll-marquee 35s linear infinite; 
 }
 
 .marquee-content {
