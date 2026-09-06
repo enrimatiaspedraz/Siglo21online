@@ -86,7 +86,7 @@ h1, h2, h3, h4 { color: var(--color-primary); font-weight: 700; }
    RESPONSIVE (MÓVIL)
    =============================== */
 @media (max-width: 992px) {
-    .hero-banner { background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%), url('image/hero.jpg'); align-items: flex-start; }
+    .hero-banner { background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%), url('image/imagencarreras.jpg'); align-items: flex-start; }
     .hero-content { width: 100%; padding: 40px 20px; text-align: center; }
     .hero-content h1 { font-size: 2.5rem; }
     .cards-grid, .mod-grid, .contacto-container { grid-template-columns: 1fr; flex-direction: column; }
@@ -584,7 +584,7 @@ h1, h2, h3, h4 { color: var(--color-primary); font-weight: 700; }
 
 .hero-banner {
     /* Aquí se genera el degradado lineal (blanco a transparente) y se superpone a la imagen */
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 0) 50%), url('image/abogacia.jpg');
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0) 50%), url('image/imagencarreras.jpg');
     background-position: center right;
     background-size: cover;
     background-repeat: no-repeat;
