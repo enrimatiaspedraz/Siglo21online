@@ -21,7 +21,7 @@ body {
     font-family: var(--font-main);
     color: var(--color-dark);
     line-height: 1.6;
-    background-color: #ffffff;
+    background-color: #fafcfd;
 }
 
 a { text-decoration: none; }
@@ -35,7 +35,7 @@ h1, h2, h3, h4 { color: var(--color-primary); font-weight: 700; }
 .subtitle { font-size: 12px; font-weight: 700; letter-spacing: 2px; color: var(--color-gray); margin-bottom: 15px; text-transform: uppercase; }
 
 /* Botones */
-.btn { display: inline-block; padding: 12px 28px; border-radius: 4px; font-weight: 600; font-size: 14px; transition: all 0.3s ease; text-align: center; cursor: pointer; border: none; }
+.btn { display: inline-block; padding: 12px 28px; border-radius: 80px; font-weight: 600; font-size: 14px; transition: all 0.3s ease; text-align: center; cursor: pointer; border: none; }
 .btn-primary { background-color: var(--color-primary); color: #fff; }
 .btn-primary:hover { background-color: var(--color-primary-hover); }
 .btn-large { padding: 16px 32px; font-size: 16px; border-radius: 8px; }
@@ -86,7 +86,7 @@ h1, h2, h3, h4 { color: var(--color-primary); font-weight: 700; }
    RESPONSIVE (MÓVIL)
    =============================== */
 @media (max-width: 992px) {
-    .hero-banner { background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%), url('image/imagencarreras.jpg'); align-items: flex-start; }
+    .hero-banner { background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%), url('image/imagencarreras2.jpg'); align-items: flex-start; }
     .hero-content { width: 100%; padding: 40px 20px; text-align: center; }
     .hero-content h1 { font-size: 2.5rem; }
     .cards-grid, .mod-grid, .contacto-container { grid-template-columns: 1fr; flex-direction: column; }
@@ -584,8 +584,8 @@ h1, h2, h3, h4 { color: var(--color-primary); font-weight: 700; }
 
 .hero-banner {
     /* Aquí se genera el degradado lineal (blanco a transparente) y se superpone a la imagen */
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0) 50%), url('image/imagencarreras.jpg');
-    background-position: center right;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0) 50%), url('image/imagencarreras2.jpg');
+    background-position: right top;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px; /* Bordes redondeados */
