@@ -174,7 +174,7 @@ h1, h2, h3, h4 { color: var(--color-primary); font-weight: 700; }
     .features-grid { grid-template-columns: 1fr; }
 }
 
-/* <!-- MARQUESINA --> */
+/* <!-- MARQUESINA HEADER --> */
 
 .marquee-container {
     width: 100%;
@@ -222,5 +222,68 @@ h1, h2, h3, h4 { color: var(--color-primary); font-weight: 700; }
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+/* =========================================================
+   MARQUESINA CEREM (Clases y Keyframes únicos)
+   ========================================================= */
+
+.cerem-mq-link {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    padding: 12px 0;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover: frena la animación y da un fondo sutil */
+.cerem-mq-link:hover {
+    background-color: rgba(247, 181, 18, 0.05); /* Amarillo CEREM al 5% */
+}
+
+.cerem-mq-link:hover .cerem-mq-container {
+    animation-play-state: paused; 
+}
+
+.cerem-mq-container {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: cerem-mq-scroll 25s linear infinite; /* Keyframe único */
+}
+
+.cerem-mq-item {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--color-cerem-blue);
+    letter-spacing: 1px;
+    padding-right: 30px; /* Separación entre el logo y la siguiente frase */
+    white-space: nowrap;
+}
+
+/* Ajustes del logo en la marquesina */
+.cerem-mq-logo {
+    height: 22px; /* Se ajusta a la altura del texto */
+    width: auto;
+    margin-left: 30px; /* Separación entre el final de la frase y el logo */
+    display: block;
+}
+
+/* Keyframe con nombre exclusivo */
+@keyframes cerem-mq-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); 
     }
 }
