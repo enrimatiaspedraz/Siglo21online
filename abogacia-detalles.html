@@ -70,7 +70,7 @@
                 </div>
                 <div>
                     <span>Modalidad</span>
-                    <strong>Presencial, híbrida o a distancia</strong>
+                    <strong>A distancia</strong>
                 </div>
             </div>
 
@@ -81,6 +81,7 @@
                 <div>
                     <span>Título</span>
                     <strong>Abogado/a</strong>
+                    <div style="font-size: 12px">Resolución Ministerial N° 2174/2015</div>
                 </div>
             </div>
 
@@ -720,11 +721,19 @@
   justify-content: center;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   z-index: 9999;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 .whatsapp-flotante img {
   width: 35px;
   height: 35px;
 }
+
+
+.whatsapp-flotante:hover { background-color: var(--color-primary-hover);  transform: scale(1.1); 
+            
+            /* Opcional: cambia el color de fondo para mejorar el efecto */
+            background-color: #004d35;  }
 </style>
 
 <!-- FIN ICONO WHATSAPP FLOTANTE -->
